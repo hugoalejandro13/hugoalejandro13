@@ -40,12 +40,12 @@ In this example:
 
 The S3-Support Group's Managed Policy will allow only group members ReadOnly access to the S3 Bucket.
 If another user who is not a group member were to attempt to access the S3 Bucket, they would run into the following error.
-![image](assets/user2_s3fail.PNG)
+![image](/assets/user2_s3fail.PNG)
 
 The EC2-Support Group's Managed Policy will allow only group members to have Read-Only acces to the EC2 instances. If a group member were to attempt any actions outside their permissions, such as stopping the instance, they'd run into the following error.
-![image](assets/user2-ec2stopfail.PNG) 
+![image](/assets/user2-ec2stopfail.PNG) 
 
 The EC2-Admin Group does not have a Managed Policy. Instead, it utilizes an Inline policy, which are only assigned to one user or group. The Inline Policy allows group members to view, start and stop EC2 instances. Unlike group members of EC2-Support, if a user of EC2-Admin were to attempt to stop an EC2 instance, they would be able to.
-![image](assets/user3-ec2stop/PNG)
+![image](/assets/user3-ec2stop/PNG)
 
 That's it! You should have a basic understanding of AWS IAM Users, Groups and Policies!
