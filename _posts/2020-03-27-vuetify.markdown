@@ -9,7 +9,7 @@ Vue JS is an open-source "progressive and perfromant" Javascript framework used 
 
 Utilizing a framework such as Vue JS will make creating UI and front-end applications easier. It is light-weight, making it incredibly fast, and easy to get started with as well!
 
-# Installing the Vue CLI
+## Installing the Vue CLI
 
 In order to install the Vue CLI, run the following commands:
 ![image](/hugoalejandro13/images/blog7/Capture.PNG)
@@ -17,13 +17,14 @@ In order to install the Vue CLI, run the following commands:
 After the installation is complete, run the following command to confirm which version of the Vue CLI has been installed:
 ![image](/hugoalejandro13/images/blog7/Capture1.PNG)
 
-Start your Server
+# Start your Server
 
 Once you've installed Vue, you'll be able to create your individual application through your command line or choice.
 
 First we'll begin by running the following command:
 ![image](/hugoalejandro13/images/blog7/Capture2.PNG)
 (Feel free to name your application whatever you'd like!)
+
 When prompted, select default
 ![image](/hugoalejandro13/images/blog7/Capture3.PNG)
 
@@ -35,7 +36,7 @@ In order to run your development server, run the following commands:
 To test that your development server is up and running, open up your web browser of choice (Chrome. It should be Google Chrome) and naviate to localhost:8080.
 ![image](/hugoalejandro13/images/blog7/Capture5.PNG)
 
-## Setting Up Visual Studio Code for use with Vue
+# Setting Up Visual Studio Code for use with Vue
 
 Visual Studio Code has an extention that allows syntax-highlighting and formatting of Vue called Vetur. In order to install this extention, click on the Extentions button on the left-hand side.
 ![image](/hugoalejandro13/images/blog7/Capture7.PNG)
@@ -44,7 +45,7 @@ Next, simply type "Vetur" in the search bar and click install.
 
 Success! You now have Vue and all the tools needed for development ready to go. Now, for the fun stuff!
 
-# Installing the Vuetify Vue CLI Package
+## Installing the Vuetify Vue CLI Package
 
 Vuetify is a Vue UI library that allows you to create amazing applications without the need to design any of the elements for your website. It's an incredibly useful Material Design Component Framework, allowing you to create amazing applications.
 
