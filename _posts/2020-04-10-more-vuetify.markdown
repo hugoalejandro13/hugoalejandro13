@@ -50,7 +50,7 @@ Now let's move on to the Drawer (the left-side menu of the website).
 
 **\<v-list-item-title\>** will display the Name, or title, of each item on the list. v-text="link.text" will look at each item's text value, and display that particular icon. We'll touch on the icons in a little bit.
 
-##A Bit Later
+## **A Bit Later**
 
 Now, you might be asking yourself, "Hey guy who forgets to do these blogs all the time, you said you'd 'touch on [insert here] a but later'!" Well, here we are a bit Later. So, lets talk about it!
 
