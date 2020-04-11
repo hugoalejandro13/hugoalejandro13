@@ -11,13 +11,13 @@ In this post, I'll be highlighting some of my favorite bits I've learned so far 
 
 One of my favorite features so far of Vuetify is the ability to have certain components accross any webpages that you design. This is particularly useful for components such as a navigation bar, for example. Below is an example of the functions of a Navbar, as well as a Drawer for site navigation.
 
-![image](hugoalejandro13/images/blog9/first.gif)
+![image](/hugoalejandro13/images/blog9/first.gif)
 
 In order to achieve this, there are two components that are utilized; [v-app-bar](https://vuetifyjs.com/en/components/app-bars/) and [v-navigation-drawer](https://vuetifyjs.com/en/components/navigation-drawers/). These both work really well together
 
 The code to make this navigation bar and drawer clickable is down below:
 
-![image](hugoalejandro13/images/blog9/image1.PNG)
+![image](/hugoalejandro13/images/blog9/image1.PNG)
 
 <v-app-bar> is the component for the nav bar. You can set the preffered color utilizing a color code.
 
@@ -29,7 +29,7 @@ The code to make this navigation bar and drawer clickable is down below:
 
 Now let's move on to the Drawer (the left-side menu of the website).
 
-![image](hugoalejandro13/images/blog9/image2.PNG)
+![image](/hugoalejandro13/images/blog9/image2.PNG)
 
 <v-navigation-drawer> is the component for the left-handed navigation panel. The key part here is v-model="drawer", which binds the navigation drawer component to the boolean value of "drawer". We'll touch on that a bit later.
 
@@ -51,7 +51,7 @@ Now, you might be asking yourself, "Hey guy who forgets to do these blogs all th
 
 We will be disecting the <script> section of the Navbar component as seen below:
 
-![image](hugoalejandro13/images/blog9/image3.PNG)
+![image](/hugoalejandro13/images/blog9/image3.PNG)
 
 drawer: This is the boolean value we had talked about previously. By default, it is set to false. This way, when you load the webpage the drawer is set closed by default.
 
