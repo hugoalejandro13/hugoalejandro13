@@ -15,7 +15,7 @@ One of my favorite features so far of Vuetify is the ability to have certain com
 
 In order to achieve this, there are two components that are utilized; [v-app-bar](https://vuetifyjs.com/en/components/app-bars/) and [v-navigation-drawer](https://vuetifyjs.com/en/components/navigation-drawers/). These both work really well together
 
-##**Disecting the Nav Bar**
+##Disecting the Nav Bar
 
 
 The code to make this navigation bar is down below:
@@ -30,7 +30,7 @@ The code to make this navigation bar is down below:
 
 **\<v-toolbar-title\>** will display whatever text you'd like as the title of the Navbar. There really isn't all too much to this particular section. The only additional changes are to the \<span\> tag for the Senior Design text, which will be slightly thiner than the 2020 text because of class="font-weight-leight"
 
-##**Disecting the Drawer**
+##Disecting the Drawer
 
 Now let's move on to the Drawer (the left-side menu of the website).
 
