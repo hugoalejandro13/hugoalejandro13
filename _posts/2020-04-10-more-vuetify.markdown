@@ -19,7 +19,7 @@ The code to make this navigation bar and drawer clickable is down below:
 
 ![image](/hugoalejandro13/images/blog9/image1.PNG)
 
-<v-app-bar> is the component for the nav bar. You can set the preffered color utilizing a color code.
+\<v-app-bar\> is the component for the nav bar. You can set the preffered color utilizing a color code.
 
 <v-app-bar-nav-icon> is the component for the clickable icon. Most importantly, @click="drawer = !drawer" will change the boolean value of drawer. Not adding this would leave the drawer, as opposed to closing with each click. We'll touch on that a bit later.
 
