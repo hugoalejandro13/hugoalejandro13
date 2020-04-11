@@ -30,7 +30,7 @@ The code to make this navigation bar is down below:
 
 **\<v-toolbar-title\>** will display whatever text you'd like as the title of the Navbar. There really isn't all too much to this particular section. The only additional changes are to the \<span\> tag for the Senior Design text, which will be slightly thiner than the 2020 text because of class="font-weight-leight"
 
-## Disecting the Drawer
+## **Disecting the Drawer**
 
 Now let's move on to the Drawer (the left-side menu of the website).
 
