@@ -72,7 +72,50 @@ Click next on the following two screens, then return to your command line or ter
 
 After this, you will be prompted to enter both the Access Key ID, as well as the Secret Access Key. **Make sure these stay secret!**
 
+Enter both the Access Key ID and the Secret Access Key. You will then be prompted to create a profile name. I chose the default and pressed enter.
 
+![image](/hugoalejandro13/images/blog12/image12.png)
+
+## **Some More Set-Up with AWS Amplify**
+
+Since most of the setup is done, I will be switching over to Visual Studio Code and using the terminal through there.
+
+My first step is to run **amplify init**.
+
+You'll be prompted to type in a name for your project. In my case, I chose the default and pressed enter. Then, I was asked to name the enviornment. I chose the name "website".
+
+This was initially rather confusing to me, but to clarify; An enviornment is a container for your project, which you can then then update by running other amplify commands.
+
+![image](/hugoalejandro13/images/blog12/image13.png)
+
+After this, you'll be asked a few other questions, such as which editor you are using, the type of app that you are building, and the JS framework you are using (in our case, since we are utilizing JS).
+
+When asked for the Source Directory Path, utilize the default of **src**. Do the same for the Directory Path and utilize the default of **dist**.
+
+After this, use the defaults for both the build and start commands.
+
+![image](/hugoalejandro13/images/blog12/first.gif)
+
+The last step of the set up is to utilize your AWS profile. Type in Y for Yes, and select default (which is the one we set up earlier with amplify configure). After this, just give it a second and you're done with the set up!
+
+![image](/hugoalejandro13/images/blog12/second.gif)
+
+## **Did It Work?**
+
+Well we just went through all of those steps and you might be asking youself; Did it work?
+
+Well, we're on the last step before we get to know the answer to that!
+
+Go ahead and type in **amplify add hosting** in order to add hosting. Select the Amazon CloudFront and S3 option (praphrasing here).
+
+![image](/hugoalejandro13/images/blog12/image14.png)
+
+I just pressed enter through all the defaults, and was then instructed to run **amplify publish** in order to push the site's current build onto AWS.
+
+After one more confirmation prompt and a few minutes of waiting, we had the final result...
+
+![image](/hugoalejandro13/images/blog12/image16.png)
+It worked! Now my production server is fully on the cloud, and I'll be able to expand from here and take advantage of all of the benefits of AWS!
 
 
 That's it for this week's post. Thanks for reading!
