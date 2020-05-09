@@ -20,7 +20,7 @@ A dynamic webpage is a webpage that has its content dynamically loaded from a se
 
 As this screenshot from the Vue documentation states:
 
-![image](/hugoalejandro13/images/blog13/vue_js.png)
+![image](/hugoalejandro13/images/blog13/vue_js.PNG)
 
 Since vue is loaded via that singular javascript line of code, from my understanding it can be used for a static webpage.
 
