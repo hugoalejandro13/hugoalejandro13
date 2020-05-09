@@ -20,7 +20,7 @@ A dynamic webpage is a webpage that has its content dynamically loaded from a se
 
 As this screenshot from the Vue documentation states:
 
-![image](hugoalejandro13/images/blog13/vue_js.png)
+![image](/hugoalejandro13/images/blog13/vue_js.png)
 
 Since vue is loaded via that singular javascript line of code, from my understanding it can be used for a static webpage.
 
@@ -37,25 +37,25 @@ Since in the previous blog we already set up out AWS Amplify enviornment, all th
 
 First thing is first, you've got to log into your AWS Console. Once you've done that, click on the services tab on the top left. Click in the search box and type in Route 53 (You can also scroll through all of the options and find it, but this is a much faster way to do this).
 
-![image](hugoalejandro13/images/blog13/zero.gif)
+![image](/hugoalejandro13/images/blog13/zero.gif)
 
 If you were to look at your Hosted Zones in the left-hand pane, there won't be any. Not to worry, as one will be created for you when registering your domain.
 
 Next, navigate and search on the left pane under Domains. Click on Registered Domains. Then, click on Register Domain.
 
-![image](hugoalejandro13/images/blog13/reg_domain.gif)
+![image](/hugoalejandro13/images/blog13/reg_domain.gif)
 
 Next, you'll be prompted to input your desired domain. Depending on what name you choose, it may or not be available. Luckily AWS provides you an easy way to check if the domain is already in use or not. Go ahead and choose whichever domain you'd like, if you are following along. Once you have found a domain that you like and is available, clcik next.
 
-![image](hugoalejandro13/images/blog13/choose_domain.gif)
+![image](/hugoalejandro13/images/blog13/choose_domain.gif)
 
 Next, you'll have to enter your personal contact information. Or if you are planning on having someone else be the administrator for the page, you'd provide their email instead. They will be required to verify their email in order to register the domain, as it will be made unavailable from the internet if it is not. Once you've entered your information, click next.
 
-![image](hugoalejandro13/images/blog13/custom_domain_step_2.png)
+![image](/hugoalejandro13/images/blog13/custom_domain_step_2.png)
 
 Next, you'll be asked to confirm your information. I went ahead and cropped out the section that will display your information that needs to be confirmed as I didn't want my information out on the internet like that, but you'd be able to do so there. You'll have the option to automatically renew your domain every cycle, depending on how many years you are buying the domain name for. Then simply check of the terms and conditions box, and then click on the Complete Order button on the bottom right!
 
-![image](hugoalejandro13/images/blog13/final_domain.gif)
+![image](/hugoalejandro13/images/blog13/final_domain.gif)
 
 ## **Linking your Newly Registered Domain to your hosted Site**
 
@@ -66,16 +66,16 @@ The next step is to visit the AWS Amplify Console, which you'll be able to find 
 Once you open up the AWS Amplify Console, you'll be greeted with a list of all the apps that are linked with Amplify.
 Select the application that you'd like to have linked to your newly registered domain; In my case, it will be the hugoalejandro app. Then, click on Domain management under the App Settings.
 
-![image](hugoalejandro13/images/blog13/amplify_console.gif)
+![image](/hugoalejandro13/images/blog13/amplify_console.gif)
 
 Once you're here, you'll have the option of adding a domain. Click on Add Domain.
 Your next screen should be the following, in which you can choose your available domain. On the following page, simply click Save.
 
-![image](hugoalejandro13/images/blog13/amplify_console_2.gif)
+![image](/hugoalejandro13/images/blog13/amplify_console_2.gif)
 
 Then, you will just have to wait as AWS automatically generates SSL certificates and all the other cool stuff. You should see something like this!
 
-![image](hugoalejandro13/images/blog13/custom_domain.png)
+![image](/hugoalejandro13/images/blog13/custom_domain.png)
 
 Once everything else is ready to go, your static site is now linked to your new custom domain!
 
