@@ -1,0 +1,88 @@
+---
+layout: "post"
+title: "Combining AWS S3 Buckets with AWS' Route 53"
+---
+
+On my previous blog entries, I mentioned the amazing documentation that is available from Vuetify's Webpage (I said there was a lot of really cool stuff in there, and there really is). You can go ahead and take a look at all the different documentation by clicking [here.](https://vuetifyjs.com/en/getting-started/quick-start/ "Vuetify Documentation")
+
+As also mentioned in my last posts, I will be utilizing Visual Studio Code as my IDE of choice. You can go ahead and download that by clicking [here.](https://code.visualstudio.com/)
+
+In this post, I'll be highlighting how I am hosting a static website from an AWS S3 Bucket. But more importantly, how I am linking this S3 Bucket with Amazon's Route 53 to display a custom domain name instead of the S3 bucket end-point. Feel free to click on whichever section you'd like if you're interested!
+
+
+## **Why choose to host your site as a static website?**
+
+When building a webpage, it's important to distinguish if your site will either be a dynamic site or a static site. What's the differnce, you may ask?
+
+Well, there seems to be a lot of conflicting information about what a static website is. But from my understanding, a static webpage is a webpage that has all of its content loaded initially via html, css, etc.
+
+A dynamic webpage is a webpage that has its content dynamically loaded from a server. In our case, we are utilizing Vue JS as the front-end framework. While a front-end fromework does in fact dynamically change the content displayed, the front-end framework itself is in fact loaded with the webpage.
+
+As this screenshot from the Vue documentation states:
+
+![image](hugoalejandro13/images/blog13/vue_js.png)
+
+Since vue is loaded via that singular javascript line of code, from my understanding it can be used for a static webpage.
+
+
+## **Why chose to Host your site via AWS?**
+
+Now that we know that, you might be asking yourself "Well, why host your site via an S3 bucket?"
+
+Well, the simple answer is because of the convenience of AWS Amplify. As i wrote about in my previous blog, AWS Amplify makes the development and deployment of our site completely seamless! One of the benefits about AWS is Route 53, which easily allows you to register your own custom domain. And since these are all accessible through the AWS Console, they all integrate easily and work together very easily! 
+
+Since in the previous blog we already set up out AWS Amplify enviornment, all that is left for us to do is for us to register our domain, and link it with our current S3 bucket where our site is being hosted.
+
+## **Registering yout Route 53 Domain**
+
+First thing is first, you've got to log into your AWS Console. Once you've done that, click on the services tab on the top left. Click in the search box and type in Route 53 (You can also scroll through all of the options and find it, but this is a much faster way to do this).
+
+![image](hugoalejandro13/images/blog13/zero.gif)
+
+If you were to look at your Hosted Zones in the left-hand pane, there won't be any. Not to worry, as one will be created for you when registering your domain.
+
+Next, navigate and search on the left pane under Domains. Click on Registered Domains. Then, click on Register Domain.
+
+![image](hugoalejandro13/images/blog13/reg_domain.gif)
+
+Next, you'll be prompted to input your desired domain. Depending on what name you choose, it may or not be available. Luckily AWS provides you an easy way to check if the domain is already in use or not. Go ahead and choose whichever domain you'd like, if you are following along. Once you have found a domain that you like and is available, clcik next.
+
+![image](hugoalejandro13/images/blog13/choose_domain.gif)
+
+Next, you'll have to enter your personal contact information. Or if you are planning on having someone else be the administrator for the page, you'd provide their email instead. They will be required to verify their email in order to register the domain, as it will be made unavailable from the internet if it is not. Once you've entered your information, click next.
+
+![image](hugoalejandro13/images/blog13/custom_domain_step_2.png)
+
+Next, you'll be asked to confirm your information. I went ahead and cropped out the section that will display your information that needs to be confirmed as I didn't want my information out on the internet like that, but you'd be able to do so there. You'll have the option to automatically renew your domain every cycle, depending on how many years you are buying the domain name for. Then simply check of the terms and conditions box, and then click on the Complete Order button on the bottom right!
+
+![image](hugoalejandro13/images/blog13/final_domain.gif)
+
+## **Linking your Newly Registered Domain to your hosted Site**
+
+Now, the process of getting your domain registered can range anywhere from 15 minutes to a few hours. So, once you have received confirmation from AWS that your domain was successfully registered, you'll be able to move on to this next step.
+
+The next step is to visit the AWS Amplify Console, which you'll be able to find in the Mobile Section of the AWS Services tab.
+
+Once you open up the AWS Amplify Console, you'll be greeted with a list of all the apps that are linked with Amplify.
+Select the application that you'd like to have linked to your newly registered domain; In my case, it will be the hugoalejandro app. Then, click on Domain management under the App Settings.
+
+![image](hugoalejandro13/images/blog13/amplify_console.gif)
+
+Once you're here, you'll have the option of adding a domain. Click on Add Domain.
+Your next screen should be the following, in which you can choose your available domain. On the following page, simply click Save.
+
+![image](hugoalejandro13/images/blog13/amplify_console_2.gif)
+
+Then, you will just have to wait as AWS automatically generates SSL certificates and all the other cool stuff. You should see something like this!
+
+![image](hugoalejandro13/images/blog13/custom_domain.png)
+
+Once everything else is ready to go, your static site is now linked to your new custom domain!
+
+You can go ahead and check out my custom domain here, although there isn't anything on it just yet. This project's wepage isn't really ready for deployment just yet.
+
+Check it out here!
+
+[https://www.hugoalejandromusic.com/](https://www.hugoalejandromusic.com/)
+
+That's it for this week's post. Thanks for reading!
